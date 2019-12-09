@@ -1,10 +1,21 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import Header from '../Components/Header/Header'
+import { 
+    Container
+} from 'react-bootstrap'
 
 class View extends Component {
     render() {
         return (
             <div>
-                header
+               <Fragment>
+
+                    <Header />
+                    <Container>
+                        Body
+                    </Container>
+                    
+                </Fragment>
             </div>
         )
     }
